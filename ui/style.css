@@ -3,18 +3,22 @@
     src: url(assets/fonts/DinaRemasterCollection.ttc);
 }
 
+*:focus {
+    outline: none;
+}
+
 :root {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 10px;
+    padding: 0;
     font-family: "DinaRemasterCollection", monospace;
     -webkit-user-select: none;
     user-select: none;
+    -webkit-user-drag: none;
     background-color: #0d0d0d;
     overflow: hidden;
     color: #ffffff;
-    padding: auto;
 }
 
 .content {
@@ -24,17 +28,75 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100%;
-    height: 100%;
+    margin: 5px;
     font-weight: lighter;
 }
+
+#name-input {
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    line-height: 38px;
+    font-size: large;
+    font-family: "DinaRemasterCollection";
+    vertical-align: middle;
+    position: absolute;
+    bottom: 100px;
+    opacity: 0;
+}
+
+#ok-input {
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px;
+    background: #ffffff;
+    color: #0d0d0d;
+    font-size: x-large;
+    font-family: "DinaRemasterCollection";
+    vertical-align: middle;
+    position: absolute;
+    bottom: 30px;
+    opacity: 0;
+}
+
+
+
+/* fade animations */
 
 .fade-in {
     animation: fadeIn 8s ease-in;
 }
 
+.fade-in-face {
+    animation: fadeIn 1s;
+}
+
+.fade-out {
+    animation: fadeOut 8s ease-in;
+}
+
 #face {
-    transition: 3s;
+    width: 200px;
+}
+
+#face2 {
+    width: 200px;
+    position: absolute;
+    top: 5px;
+    opacity: 0;
+}
+
+#face-min {
+    position: fixed;
+    top: 10px;
+    right: 10px;
 }
 
 #intro2,
@@ -49,6 +111,16 @@
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
