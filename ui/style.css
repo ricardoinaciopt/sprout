@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "DinaRemasterCollection";
+    src: url(assets/fonts/DinaRemasterCollection.ttc);
+}
+
+:root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+    font-family: "DinaRemasterCollection", monospace;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: #0d0d0d;
+    overflow: hidden;
+    color: #ffffff;
+    padding: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-weight: lighter;
+}
+
+.fade-in {
+    animation: fadeIn 8s ease-in;
+}
+
+#face {
+    transition: 3s;
+}
+
+#intro2,
+#intro3 {
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color: #ffffff;
+        background: #0d0d0d;
+    }
+
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #0d0d0d;
+        background: #ffffff;
+    }
+
+
+}
