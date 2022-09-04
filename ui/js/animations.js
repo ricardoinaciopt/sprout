@@ -18,10 +18,3 @@ setTimeout(function () {
   document.getElementById("ok-input").classList.add("fade-in");
   document.getElementById("ok-input").style.opacity = 1;
 }, 10000);
-
-function getName() {
-  let name = document.getElementById("name-input").value;
-  if (name !== null && name !== "") {
-    location.replace("main.html");
-  }
-}

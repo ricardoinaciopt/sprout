@@ -5,21 +5,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/images/favi.webp" />
     <link rel="stylesheet" href="style.css" />
     <title>sprout</title>
 </head>
 
-<body>
-    <div class="main-content">
-        <img class="fade-in" id="face-min" src="assets/images/face-min.png">
+<body class="fade-in">
+    <div>
+        <img id="face-min" src="assets/images/face-min.png">
 
-        <h3 class="fade-in">welcome. it's nice to meet you.</h3>
+        <h3>hello <span id="user"></span>, <br>welcome to sprout.</h3>
         <audio autoplay>
             <source src="assets/sfx/wlc.mp3" type="audio/mpeg">
         </audio>
     </div>
-    <script src="script.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>

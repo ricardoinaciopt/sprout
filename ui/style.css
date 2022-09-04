@@ -43,6 +43,7 @@
     color: #ffffff;
     line-height: 38px;
     font-size: large;
+    text-align: center;
     font-family: "DinaRemasterCollection";
     vertical-align: middle;
     position: absolute;
@@ -89,7 +90,7 @@
 #face2 {
     width: 200px;
     position: absolute;
-    top: 5px;
+    top: 8px;
     opacity: 0;
 }
 

@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/images/favi.webp" />
     <link rel="stylesheet" href="style.css" />
     <title>sprout</title>
 </head>
@@ -16,16 +15,17 @@
         <img id="face2" src="assets/images/face2.png">
 
         <h3 class="fade-in">welcome my friend.</h3>
-        <h3 id="intro2">this is sprout, <br> your self-growth companion</h3>
+        <h3 id="intro2">this is sprout, <br> your self-growth companion.</h3>
         <h3 id="intro3">can you tell me your name?</h3>
         <input type="text" id="name-input" spellcheck="false" maxlength="15">
-        <button id="ok-input" onclick="getName()">Done</button>
+        <button id="ok-input">Done</button>
 
         <audio autoplay>
             <source src="assets/sfx/wlc.mp3" type="audio/mpeg">
         </audio>
     </div>
-    <script src="script.js"></script>
+    <script src="js/animations.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
